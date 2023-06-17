@@ -1,0 +1,23 @@
+:root {
+  --Color1: #000000;
+  --Color2: #e7dfd8;
+  --Color3: #ffffff;
+}
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Color2);
+}
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+svg,
+img {
+  width: 100%;
+  height: auto;
+}
