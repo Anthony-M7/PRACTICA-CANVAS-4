@@ -7,17 +7,271 @@ html {
   font-size: 16px;
   overflow-x: hidden;
 }
-main {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--Color2);
-}
-.logo {
-  width: 4rem;
-  height: 4rem;
-}
 svg,
 img {
   width: 100%;
   height: auto;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Color2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+}
+.right img {
+  width: 100%;
+  height: 100vh;
+  float: right;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.logo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo svg {
+  width: 4rem;
+  height: 4rem;
+}
+.logo svg:hover {
+  transform: scale(1.1);
+  transition: 300ms ease;
+}
+.l-center {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.left h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.l-bottom {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  width: 35%;
+  margin-top: 6rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: thin solid #000;
+  cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: 300ms ease;
+}
+
+.part-ii {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo-2 svg {
+  width: 6rem;
+  height: 6rem;
+}
+.logo-2 svg:hover {
+  transform: scale(1.1);
+  transition: 300ms ease;
+}
+.title {
+  font-size: 3rem;
+  margin: 1rem auto;
+}
+.part-ii p {
+  width: 70%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.part-iii {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Color2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-2 {
+  justify-self: flex-start;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-top: 1rem;
+}
+.cards-container {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 3rem;
+  justify-content: space-evenly;
+}
+.card {
+  width: 25%;
+  height: 22rem;
+  background-color: var(--Color3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--Color1);
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon svg {
+  width: 4rem;
+  height: 4rem;
+}
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease;
+}
+.card:nth-child(3) .icon svg {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+.card:nth-child(1) {
+  animation: into-repeat 700ms both 0s ease;
+}
+.card:nth-child(2) {
+  animation: into-repeat 700ms both 500ms ease;
+}
+.card:nth-child(3) {
+  animation: into-repeat 700ms both 800ms ease;
+}
+
+@keyframes into-repeat {
+  0% {
+    opacity: 0;
+    transform: translate(400%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.card-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8rem;
+  margin-bottom: 0;
+}
+.text {
+  font-size: 1.1rem;
+  padding: 1.4rem;
+  padding-top: 0;
+}
+.text ul {
+  padding: 1.3rem;
+}
+
+.part-iv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.title4 {
+  font-size: 5rem;
+  margin: 0;
+}
+.picture {
+  width: 90%;
+  height: 50vh;
+}
+.picture img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 30% 20%;
+  filter: grayscale(0.7);
+  border-radius: 10px;
+}
+.picture img:hover {
+  transform: scale(1.02);
+  transition: transform 300ms ease;
+}
+
+.part-v {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Color2);
+  display: flex;
+  justify-content: space-around;
+}
+.part-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picture2 {
+  width: 90%;
+  height: auto;
+}
+.picture2 img {
+  height: 90vh;
+  filter: grayscale(0.8);
+  border-radius: 10px;
+}
+.picture2 img:hover {
+  transform: scale(1.02);
+  transition: transform 300ms ease;
+}
+.part-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.title5 {
+  font-size: 4.5rem;
+  margin-bottom: 0.4rem;
+}
+.content-t {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.content p {
+  font-size: 1.1rem;
 }
