@@ -1,7 +1,18 @@
+@font-face {
+  font-family: Garet-R;
+  src: url(../Fonts/garet/Garet-Book.ttf);
+}
+@font-face {
+  font-family: Inter-R;
+  src: url(../Fonts/static/Inter-Regular.ttf);
+}
+
 :root {
   --Color1: #000000;
   --Color2: #e7dfd8;
   --Color3: #ffffff;
+  --garet: Garet-R;
+  --inter: Inter-R;
 }
 html {
   font-size: 16px;
@@ -58,12 +69,14 @@ main {
   margin-right: auto;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   margin-bottom: 0;
+  font-family: var(--garet);
 }
 .left h2 {
   font-size: 1.3rem;
   font-weight: 300;
+  font-family: var(--inter);
 }
 .l-bottom {
   width: 80%;
@@ -77,6 +90,7 @@ h1 {
   background-color: transparent;
   border: thin solid #000;
   cursor: pointer;
+  font-family: var(--garet);
 }
 .button:hover {
   transform: scale(1.1);
@@ -102,11 +116,13 @@ h1 {
 .title {
   font-size: 3rem;
   margin: 1rem auto;
+  font-family: var(--garet);
 }
 .part-ii p {
-  width: 70%;
+  width: 60%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-family: var(--inter);
 }
 
 .part-iii {
@@ -121,8 +137,9 @@ h1 {
   justify-self: flex-start;
   font-size: 3rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   padding-top: 1rem;
+  font-family: var(--garet);
 }
 .cards-container {
   align-self: center;
@@ -191,11 +208,13 @@ h1 {
   text-align: center;
   padding: 0.8rem;
   margin-bottom: 0;
+  font-family: var(--inter);
 }
 .text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 1.4rem;
   padding-top: 0;
+  font-family: var(--inter);
 }
 .text ul {
   padding: 1.3rem;
@@ -210,8 +229,9 @@ h1 {
   justify-content: space-around;
 }
 .title4 {
-  font-size: 5rem;
+  font-size: 4.7rem;
   margin: 0;
+  font-family: var(--garet);
 }
 .picture {
   width: 90%;
@@ -266,12 +286,15 @@ h1 {
 .title5 {
   font-size: 4.5rem;
   margin-bottom: 0.4rem;
+  font-family: var(--garet);
 }
 .content-t {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-family: var(--garet);
 }
 .content p {
   font-size: 1.1rem;
+  font-family: var(--inter);
 }
